@@ -1,19 +1,18 @@
 
 Descripció - Enunciat de l'exercici
-	Patrò Command:
-		Dissenya un pàrquing de 4 vehicles: un cotxe, una bicicleta, un avió i un vaixell.
+		Command
+Dissenya un pàrquing de 4 vehicles: un cotxe, una bicicleta, un avió i un vaixell. 
 
-        Mostra com funciona el patró Command que implementa els mètodes arrencar, accelerar
-        i frenar per a cada tipus de vehicle.
+Mostra com funciona el patró Command que implementa els mètodes arrencar, accelerar i frenar per a cada tipus de vehicle.
 
 Tecnologies Utilitzades:
 	Java
 	
 Requisits:
-	Java 21 o superior.
+	Java 22 o superior.
 	
 Instal·lació:
-	Cal instalar Java 21 o superior.
+	Cal instalar Java 22 o superior.
 	
 Execució
     Descarregar el projecte.

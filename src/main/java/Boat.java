@@ -7,7 +7,7 @@ public class Boat extends Vehicle {
 
     @Override
     public String toString(){
-        return "Boat engine started: " + this.started + ", speed: " + this.speed;
+        return "Boat engine started: " + this.started + ", speed: " + this.speed +" Km/h";
     }
 
 }

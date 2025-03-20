@@ -7,6 +7,6 @@ public class Plane extends Vehicle {
 
     @Override
     public String toString(){
-        return "Plane engine started: " + this.started + ", speed: " + this.speed;
+        return "Plane engine started: " + this.started + ", speed: " + this.speed +" Km/h";
     }
 }

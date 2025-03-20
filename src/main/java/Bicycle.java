@@ -9,7 +9,7 @@ public class Bicycle extends Vehicle {
 
     @Override
     public String toString(){
-        return "Bicycle speed: " + this.speed;
+        return "Bicycle speed: " + this.speed +" Km/h";
     }
 
 }

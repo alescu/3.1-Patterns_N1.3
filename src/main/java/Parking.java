@@ -2,7 +2,7 @@ import java.util.Arrays;
 import java.util.LinkedList;
 import java.util.Queue;
 
-public class RemoteControler implements ICommand {
+public class Parking implements ICommand {
 
     private Vehicle obj = null;
     protected Queue<String> orderList = new LinkedList<String>();
@@ -36,11 +36,11 @@ public class RemoteControler implements ICommand {
         }
     }
 
-    public RemoteControler(Vehicle obj) {
+    public Parking(Vehicle obj) {
         this.obj = obj;
     }
 
-    public RemoteControler(Vehicle obj, String instruction) {
+    public Parking(Vehicle obj, String instruction) {
         this.obj = obj;
         this.execute(instruction);
     }

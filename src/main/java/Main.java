@@ -1,5 +1,4 @@
 import java.util.ArrayList;
-import java.util.Collection;
 import java.util.List;
 
 public class Main {
@@ -17,43 +16,36 @@ public class Main {
         Boat boat = new Boat();
         Car car = new Car();
         Plane plane = new Plane();
-        /*
-        Collection<Vehicle> vehicleList = new ArrayList<Vehicle>();
-        vehicleList.add(bike);
-        vehicleList.add(boat);
-        vehicleList.add(car);
-        vehicleList.add(plane);
-        */
 
-        List<RemoteControler> remoteControlerList = new ArrayList<RemoteControler>();
+        List<Parking> remoteControlerList = new ArrayList<Parking>();
 
-        RemoteControler carRC = new RemoteControler(car);
+        Parking carRC = new Parking(car);
         carRC.setOrderList(new String[] {"a"});
         remoteControlerList.add(carRC);
 
 
-        RemoteControler boatRC = new RemoteControler(boat,"s");
+        Parking boatRC = new Parking(boat,"s");
         boatRC.setOrderList(new String[] {"a","a"});
         remoteControlerList.add(boatRC);
 
 
-        RemoteControler bikeRC = new RemoteControler(bike);
+        Parking bikeRC = new Parking(bike);
         bikeRC.setOrderList(new String[] {"a","a","a","a","a","a"});
         remoteControlerList.add(bikeRC);
 
-        RemoteControler planeRC = new RemoteControler(plane,"s");
+        Parking planeRC = new Parking(plane,"s");
         remoteControlerList.add(planeRC);
 
-        for(RemoteControler rc : remoteControlerList){
+        for(Parking rc : remoteControlerList){
             rc.execute();
         }
-        System.out.println("\n");
+        System.out.println("\n Primeres instruccions.");
         System.out.println(bike.toString());
         System.out.println(boat.toString());
         System.out.println(car.toString());
         System.out.println(plane.toString());
 
-        System.out.println("\n");
+        System.out.println("\n Segones instruccions");
 
         boatRC.setOrderList(new String[] {"s","a","a","a","a"});
         carRC.setOrderList(new String[] {"s","a","a"});
@@ -65,7 +57,7 @@ public class Main {
         remoteControlerList.add(bikeRC);
         remoteControlerList.add(planeRC);
 
-        for(RemoteControler rc : remoteControlerList){
+        for(Parking rc : remoteControlerList){
             rc.execute();
         }
 
